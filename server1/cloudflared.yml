@@ -1,0 +1,9 @@
+name: cloudflared
+services:
+    cloudflared:
+        image: cloudflare/cloudflared:latest
+        environment:
+          - TUNNEL_TOKEN=
+        command: tunnel run
+        network_mode: host
+        restart: unless-stopped

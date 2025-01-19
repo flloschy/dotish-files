@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
+    "editor.fontLigatures": true,
+    "svelte.enable-ts-plugin": true,
+    "dart.flutterSdkPath": "/home/floschy/custominstall/flutter",
+    "window.titleBarStyle": "custom",
+}

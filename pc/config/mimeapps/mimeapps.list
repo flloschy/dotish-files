@@ -1,0 +1,5 @@
+[Added Associations]
+application/json=org.kde.kate.desktop;
+application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop;
+application/pdf=com.github.jeromerobert.pdfarranger.desktop;firefox.desktop;
+image/jpeg=firefox.desktop;

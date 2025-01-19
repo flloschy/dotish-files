@@ -1,0 +1,5 @@
+clone https://github.com/flloschy/statsApi into this folder
+
+add 
+@reboot sleep 30 && python3 /home/floschy/grafana/statsApi/apiserver.py
+to crontab 

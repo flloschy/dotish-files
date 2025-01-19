@@ -1,0 +1,34 @@
+services:
+  jellyfin:
+    build:
+     context: .
+     dockerfile: Dockerfile
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+    volumes:
+      - /mnt/jellyfin/jellyfin/config:/config
+      - /mnt/jellyfin/jellyfin/cache:/cache
+      - /mnt/jellyfin/more/:/data/more:ro
+      - /mnt/jellyfin/shows/:/data/shows:ro
+      - /mnt/jellyfin/music/:/data/music:ro
+    ports:
+      - 127.0.0.1:3004:8096
+      # - 7359:7359/udp #optional
+      # - 1900:1900/udp #optional
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+
+  jellyfin-vue:
+    depends_on:
+      jellyfin:
+        condition: service_started
+    image: jellyfin/jellyfin-vue:unstable
+    ports:
+      - 3005:80
+    restart: unless-stopped

@@ -1,0 +1,16 @@
+{
+    "discordBranch": "canary",
+    "minimizeToTray": false,
+    "arRPC": true,
+    "splashColor": "oklab(0.89908 -0.00192907 -0.0048306)",
+    "splashBackground": "oklab(0.22894 -0.0214198 -0.00403817)",
+    "spellCheckLanguages": [
+        "en-US",
+        "en",
+        "de-DE"
+    ],
+    "customTitleBar": false,
+    "staticTitle": true,
+    "splashTheming": true,
+    "disableMinSize": false
+}

@@ -1,0 +1,15 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy
+    container_name: ntfy
+    command:
+      - serve
+    environment:
+      - TZ=Europe/Berlin
+    volumes:
+      - /mnt/remaining/ntfy/cache:/var/cache/ntfy
+      - /mnt/remaining/ntfy/ntfy:/etc/ntfy
+      - /mnt/remaining/ntfy/user:/var/lib/ntfy/
+    ports:
+      - 3007:80
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+[window]
+padding = {x = 10, y = 2}
+decorations = "None"
+resize_increments = true
+
+[scrolling]
+multiplier = 5
+
+[font]
+normal = {family="JetBrainsMono Nerd Font", style="Medium"}
+size = 10.5
+
+[cursor]
+style = {shape="Beam", blinking="On"}
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [{key="V", mods="Control", action="Paste"}]
