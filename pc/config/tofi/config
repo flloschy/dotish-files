@@ -9,9 +9,25 @@ num-results = 5
 font = /usr/share/fonts/nerd-fonts-git/TTF/JetBrainsMonoNerdFontMono-Medium.ttf
 background-color = #000A
 text-color = #9999
-selection-color = #ABCDEF
+selection-color = #9BB4C1
 text-cursor-style = underscore
 prompt-text = "> "
 hide-cursor = false
 text-cursor = true
 require-match = false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

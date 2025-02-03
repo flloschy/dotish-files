@@ -5,8 +5,11 @@ arc-gtk-theme
 base
 base-devel
 bc
+cimg
 clipse
 deno
+docker
+docker-compose
 efibootmgr
 firefox
 gimp
@@ -23,6 +26,7 @@ htop
 hyprland
 hyprland-qtutils
 hyprlock
+imagemagick
 img2pdf
 iwd
 kate

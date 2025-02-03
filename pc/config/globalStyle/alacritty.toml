@@ -1,0 +1,5 @@
+[colors.primary]
+background = '#3B5261'
+foreground = '#6C90A3'
+[colors.cursor]
+text = '#9BB4C1'

@@ -1,5 +1,5 @@
 def collect():
-    collectMoveFilesExclusive([], "obs-studio")
+    collectMoveFilesInclusive(["user.ini", "global.ini", "basic/profiles/Untitled/basic.ini"], "obs-studio")
 
 def unpack():
-    unpackMoveFilesExclusive([], "obs-studio")
+    collectMoveFilesInclusive(["user.ini", "global.ini", "basic/profiles/Untitled/basic.ini"], "obs-studio")

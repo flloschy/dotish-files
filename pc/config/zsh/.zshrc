@@ -48,3 +48,4 @@ alias editzsh="nano ~/.zshrc && reloadzsh"
 alias kys='shutdown && eval $(notify-send -u critical --wait "Shutting down" "Your system will shutdown in 1 minute." -A "shutdown -c"="Cancel" -A "shutdown now"="Now" -A "shutdown -r"="Reboot")'
 alias i='yay -S --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter --noconfirm'
 alias upgrade='yay -Syu --noconfirm --devel --rebuildtree --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter'
+alias updateTheme="cd /home/floschy/.config/globalStyle && python update.py"
