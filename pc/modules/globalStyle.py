@@ -1,5 +1,5 @@
 def collect():
-    collectMoveFilesExclusive([], "globalStyle")
+    collectMoveFilesExclusive([".venv"], "globalStyle")
 
 def unpack():
     unpackMoveFilesExclusive([], "globalStyle")

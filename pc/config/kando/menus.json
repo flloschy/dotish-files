@@ -1,0 +1,301 @@
+{
+  "menus": [
+    {
+      "root": {
+        "type": "submenu",
+        "name": "custom",
+        "icon": "workspaces",
+        "iconTheme": "material-symbols-rounded",
+        "children": [
+          {
+            "type": "submenu",
+            "data": {},
+            "name": "Apps",
+            "icon": "apps",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "submenu",
+                "data": {},
+                "name": "Bookmarks",
+                "icon": "open_in_browser",
+                "iconTheme": "material-symbols-rounded",
+                "children": [
+                  {
+                    "type": "uri",
+                    "data": {
+                      "uri": "https://github.com/"
+                    },
+                    "name": "Github",
+                    "icon": "graph_1",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "uri",
+                    "data": {
+                      "uri": "https://nebula.tv/"
+                    },
+                    "name": "nebular",
+                    "icon": "kid_star",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "uri",
+                    "data": {
+                      "uri": "https://www.youtube.com/feed/subscriptions"
+                    },
+                    "name": "youtube",
+                    "icon": "video_library",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "uri",
+                    "data": {
+                      "uri": "http://localhost:9999"
+                    },
+                    "name": "Pihole",
+                    "icon": "house_with_shield",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "submenu",
+                    "data": {},
+                    "name": "Selfhosted",
+                    "icon": "host",
+                    "iconTheme": "material-symbols-rounded",
+                    "children": [
+                      {
+                        "type": "uri",
+                        "data": {
+                          "uri": "https://jellyfin.floschy.dev"
+                        },
+                        "name": "Jellyfin",
+                        "icon": "music_video",
+                        "iconTheme": "material-symbols-rounded"
+                      },
+                      {
+                        "type": "uri",
+                        "data": {
+                          "uri": "https://warden.floschy.dev"
+                        },
+                        "name": "Bitwarden",
+                        "icon": "password",
+                        "iconTheme": "material-symbols-rounded"
+                      },
+                      {
+                        "type": "uri",
+                        "data": {
+                          "uri": "https://immich.floschy.dev"
+                        },
+                        "name": "Immich",
+                        "icon": "image",
+                        "iconTheme": "material-symbols-rounded"
+                      },
+                      {
+                        "type": "uri",
+                        "data": {
+                          "uri": "https://grafana.floschy.dev"
+                        },
+                        "name": "Grafana",
+                        "icon": "chart_data",
+                        "iconTheme": "material-symbols-rounded"
+                      },
+                      {
+                        "type": "uri",
+                        "data": {
+                          "uri": "https://jfvue.floschy.dev"
+                        },
+                        "name": "Jellyfin Vue",
+                        "icon": "music_video",
+                        "iconTheme": "material-symbols-rounded"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "uri",
+                    "data": {
+                      "uri": "https://mail.google.com"
+                    },
+                    "name": "mail",
+                    "icon": "mail",
+                    "iconTheme": "material-symbols-rounded"
+                  }
+                ]
+              },
+              {
+                "type": "submenu",
+                "data": {},
+                "name": "Regular apps",
+                "icon": "home",
+                "iconTheme": "material-symbols-rounded",
+                "children": [
+                  {
+                    "type": "command",
+                    "data": {
+                      "command": "Firefox",
+                      "delayed": true
+                    },
+                    "name": "Firefox",
+                    "icon": "globe",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "command",
+                    "data": {
+                      "command": "steam",
+                      "delayed": false
+                    },
+                    "name": "Steam",
+                    "icon": "videogame_asset",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "command",
+                    "data": {
+                      "command": "heroic",
+                      "delayed": false
+                    },
+                    "name": "Heroic",
+                    "icon": "terminal",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "command",
+                    "data": {
+                      "command": "vesktop",
+                      "delayed": true
+                    },
+                    "name": "Vesktop",
+                    "icon": "chat",
+                    "iconTheme": "material-symbols-rounded"
+                  },
+                  {
+                    "type": "command",
+                    "data": {
+                      "command": "finamp",
+                      "delayed": true
+                    },
+                    "name": "Finamp",
+                    "icon": "music_note",
+                    "iconTheme": "material-symbols-rounded"
+                  }
+                ]
+              },
+              {
+                "type": "submenu",
+                "data": {},
+                "name": "Submenu",
+                "icon": "apps",
+                "iconTheme": "material-symbols-rounded",
+                "children": []
+              },
+              {
+                "type": "submenu",
+                "data": {},
+                "name": "Submenu",
+                "icon": "apps",
+                "iconTheme": "material-symbols-rounded",
+                "children": []
+              }
+            ]
+          },
+          {
+            "type": "command",
+            "data": {
+              "command": "hyprctl dispatch workspace e+1",
+              "delayed": false
+            },
+            "name": "Next workspace",
+            "icon": "arrow_right",
+            "iconTheme": "material-symbols-rounded"
+          },
+          {
+            "type": "submenu",
+            "data": {},
+            "name": "Workspaces",
+            "icon": "select_window_2",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "hyprctl dispatch workspace 6",
+                  "delayed": false
+                },
+                "name": "6",
+                "icon": "looks_6",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "hyprctl dispatch workspace 5",
+                  "delayed": false
+                },
+                "name": "5",
+                "icon": "looks_5",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "hyprctl dispatch workspace 4",
+                  "delayed": false
+                },
+                "name": "4",
+                "icon": "looks_4",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "hyprctl dispatch workspace 3",
+                  "delayed": false
+                },
+                "name": "3",
+                "icon": "looks_3",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "hyprctl dispatch workspace 2",
+                  "delayed": false
+                },
+                "name": "2",
+                "icon": "looks_two",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "hyprctl dispatch workspace 1",
+                  "delayed": false
+                },
+                "name": "1",
+                "icon": "looks_one",
+                "iconTheme": "material-symbols-rounded"
+              }
+            ]
+          },
+          {
+            "type": "command",
+            "data": {
+              "command": "hyprctl dispatch workspace e-1",
+              "delayed": false
+            },
+            "name": "Prev workspace",
+            "icon": "arrow_left",
+            "iconTheme": "material-symbols-rounded"
+          }
+        ]
+      },
+      "shortcut": "",
+      "shortcutID": "custom",
+      "centered": false,
+      "warpMouse": true,
+      "anchored": false
+    }
+  ],
+  "templates": []
+}

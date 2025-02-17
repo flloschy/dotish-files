@@ -1,5 +1,4 @@
 {
-    "files.autoSave": "onFocusChange",
     "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
     "editor.fontLigatures": true,
     "svelte.enable-ts-plugin": true,
@@ -15,9 +14,6 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorWidth": 3,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
     "editor.minimap.autohide": true,
     "editor.minimap.renderCharacters": false,
     "editor.minimap.side": "left",
@@ -29,7 +25,6 @@
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "top",
     "workbench.colorCustomizations": {},
-    "breadcrumbs.enabled": false,
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.tabActionLocation": "left",
     "workbench.editor.tabSizing": "fixed",
@@ -40,7 +35,6 @@
     "accessibility.underlineLinks": true,
     "explorer.incrementalNaming": "smart",
     "explorer.openEditors.sortOrder": "alphabetical",
-    "explorer.sortOrder": "type",
     "explorer.sortOrderLexicographicOptions": "upper",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.enableImages": true,
@@ -51,8 +45,10 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "window.customTitleBarVisibility": "auto",
-    "workbench.sideBar.location": "right",
     "editor.codeActionsOnSave": {},
     "window.dialogStyle": "custom",
     "window.titleBarStyle": "custom",
+    "editor.tokenColorCustomizations": {},
+    "files.autoSave": "onFocusChange",
+    "editor.copyWithSyntaxHighlighting": false
 }
