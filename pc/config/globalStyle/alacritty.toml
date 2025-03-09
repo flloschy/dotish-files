@@ -1,5 +1,5 @@
 [colors.primary]
-background = '#23160e'
-foreground = '#d7c3b8'
+background = '#0f230e'
+foreground = '#bebed1'
 [colors.cursor]
-text = '#d7c3b8'
+text = '#bebed1'

@@ -9,7 +9,7 @@
     "autoInstallDxvkNvapi": false,
     "addSteamShortcuts": true,
     "preferSystemLibs": false,
-    "checkForUpdatesOnStartup": true,
+    "checkForUpdatesOnStartup": false,
     "autoUpdateGames": true,
     "customWinePaths": [],
     "defaultInstallPath": "/home/floschy/Games/Heroic",

@@ -49,3 +49,9 @@ alias kys='shutdown && eval $(notify-send -u critical --wait "Shutting down" "Yo
 alias i='yay -S --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter --noconfirm'
 alias upgrade='yay -Syu --noconfirm --devel --rebuildtree --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter'
 alias updateTheme="cd /home/floschy/.config/globalStyle && ./.venv/bin/python update.py"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/floschy/.dart-cli-completion/zsh-config.zsh ]] && . /home/floschy/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
