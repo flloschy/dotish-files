@@ -1,3 +1,0 @@
-57 23 * * * sh /home/floschy/stopdown.sh
-30 15 * * * sh /home/floschy/startup.sh
-@reboot sh /home/floschy/startup.sh

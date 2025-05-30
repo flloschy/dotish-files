@@ -1,0 +1,38 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 276,
+                "origin_hash": "96bd0732a76cbabc3de82a71497924f6"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Super_L",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 281,
+                "origin_hash": "96bd0732a76cbabc3de82a71497924f6"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "XF86AudioMute",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 282,
+                "origin_hash": "96bd0732a76cbabc3de82a71497924f6"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "XF86AudioMicMute",
+        "mapping_type": "key_macro"
+    }
+]
