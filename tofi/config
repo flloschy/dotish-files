@@ -9,7 +9,7 @@ num-results = 5
 font = /usr/share/fonts/nerd-fonts-git/TTF/JetBrainsMonoNerdFontMono-Medium.ttf
 background-color = #000A
 text-color = #9999
-selection-color = #C78BAE
+selection-color = #a5599d
 text-cursor-style = underscore
 prompt-text = "> "
 hide-cursor = false
@@ -19,3 +19,50 @@ module-math = true
 module-search = true
 module-search-engine = "google.com/search"
 multi-instance = false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

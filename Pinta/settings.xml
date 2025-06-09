@@ -10,7 +10,7 @@
   <setting name="toolbox-shown" type="System.Boolean">True</setting>
   <setting name="pixel-grid-shown" type="System.Boolean">False</setting>
   <setting name="last-dialog-directory" type="System.String">file:///home/floschy/Projects/faHackathon/finamp-hackathon/assets</setting>
-  <setting name="last-selected-tool" type="System.String">RectangleSelectTool</setting>
+  <setting name="last-selected-tool" type="System.String">PaintBrushTool</setting>
   <setting name="primary-color" type="System.String">FFFF0000</setting>
   <setting name="secondary-color" type="System.String">FFFFFFFF</setting>
   <setting name="recently-used-colors" type="System.String">FFFF0000,FF000000,FFFFFFFF,FFFFD800,FFFF6A00,FF808080,FFA0A0A0,FF0094FF,FFFF6A00,FFFFD800</setting>
