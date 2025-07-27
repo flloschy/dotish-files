@@ -3,7 +3,6 @@
 !/.gitignore
 
 !/Pinta
-!/Pinta/settings.xml
 !/Pinta/palette.txt
 
 !/VSCodium/
@@ -32,6 +31,14 @@
 
 !/hypr
 !/hypr/**
+
+!/micro/
+!/micro/colorschemes/
+!/micro/colorschemes/material-tc-custom.micro
+!/micro/settings.json
+
+!/solaar/
+!/solaar/config.yaml
 
 !/input-remapper-2/
 !/input-remapper-2/presets

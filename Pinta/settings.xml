@@ -10,10 +10,10 @@
   <setting name="toolbox-shown" type="System.Boolean">True</setting>
   <setting name="pixel-grid-shown" type="System.Boolean">False</setting>
   <setting name="last-dialog-directory" type="System.String">file:///home/floschy/Projects/faHackathon/finamp-hackathon/assets</setting>
-  <setting name="last-selected-tool" type="System.String">PaintBrushTool</setting>
-  <setting name="primary-color" type="System.String">FFFF0000</setting>
+  <setting name="last-selected-tool" type="System.String">MoveSelectionTool</setting>
+  <setting name="primary-color" type="System.String">FF0026FF</setting>
   <setting name="secondary-color" type="System.String">FFFFFFFF</setting>
-  <setting name="recently-used-colors" type="System.String">FFFF0000,FF000000,FFFFFFFF,FFFFD800,FFFF6A00,FF808080,FFA0A0A0,FF0094FF,FFFF6A00,FFFFD800</setting>
+  <setting name="recently-used-colors" type="System.String">FF0026FF,FFFF0000,FFFF6A00,FF404040,FFA0A0A0,FF303030,FF000000,FFFFFFFF,FFFFD800,FFFF6A00</setting>
   <setting name="paintbrushtool-antialias" type="System.Int32">0</setting>
   <setting name="paintbrushtool-brush-width" type="System.Int32">4</setting>
   <setting name="paint-brush-brush" type="System.Int32">0</setting>
@@ -42,4 +42,5 @@
   <setting name="freeformshapetool-brush-width" type="System.Int32">2</setting>
   <setting name="clonestamptool-brush-width" type="System.Int32">2</setting>
   <setting name="recolortool-brush-width" type="System.Int32">2</setting>
+  <setting name="menubar-shown" type="System.Boolean">False</setting>
 </settings>

@@ -46,7 +46,14 @@ alias editzsh="nano ~/.zshrc && reloadzsh"
 alias kys='shutdown && eval $(notify-send -u critical --wait "Shutting down" "Your system will shutdown in 1 minute." -A "shutdown -c"="Cancel" -A "shutdown now"="Now" -A "shutdown -r now"="Reboot")'
 alias i='yay -S --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter --noconfirm'
 alias upgrade='yay -Syu --noconfirm --devel --rebuildtree --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter'
+alias updates="yay -Sy; yay -Qu | wc -l"
 alias updateTheme="cd /home/floschy/.config/globalStyle && ./.venv/bin/python update.py"
+alias ls="lsd"
+compressPDF() {
+	input=$1
+	output=$2
+	gs -sDEVICE=pdfwrite -dCompatibilityLevel=0.1 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$output $input
+}
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall

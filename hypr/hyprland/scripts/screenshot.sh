@@ -1,8 +1,6 @@
-hyprpicker -r -z &
-sleep 0.1
-IMG="/home/floschy/Pictures/Screenshots/$(date +"%Y-%m-%d_%I:%M:%S_%p").png"
-hyprctl keyword layerrule "noanim,selection" >/dev/null
+wayfreeze & PID=$!
+IMG="$HOME/Pictures/Screenshots/$(date +"%Y-%m-%d_%I:%M:%S_%p").png"
 wayshot -f $IMG -s "$(slurp)"
 wl-copy < $IMG
-pkill hyprpicker
-notify-send -u low -t 5000 "Screenshot" "Screenshot saved"
+kill $PID
+notify-send -u low -t 5000 -i $IMG "Screenshot" "Screenshot saved"

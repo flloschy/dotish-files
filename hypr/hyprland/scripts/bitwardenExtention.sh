@@ -4,7 +4,6 @@
 # FOUND HERE: https://github.com/hyprwm/Hyprland/issues/3835#issuecomment-2004448245
 # created my updated version based on theirs :)
 
-
 handle() {
   case $1 in windowtitle*)
       # Remove unnecessary prefix

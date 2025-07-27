@@ -57,5 +57,7 @@
     "cSpell.userWords": [
         "unessesary"
     ],
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDelete": false,
+    "workbench.editor.empty.hint": "hidden"
 }
