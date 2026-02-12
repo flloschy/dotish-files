@@ -60,3 +60,6 @@
 !/pihole-docker-compose.yml
 
 !/README.md
+
+!/eww/**
+!/matugen/**
