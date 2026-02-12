@@ -51,17 +51,21 @@ $primary = rgb({primary})
 $text = rgb({text})
 """)
 
+with open("/home/floschy/.config/gtk-4.0/colors.css", "w") as file:
+    file.write(f"""@define-color theme_selected_bg_color #{primary};""")
+with open("/home/floschy/.config/gtk-3.0/colors.css", "w") as file:
+    file.write(f"""@define-color theme_selected_bg_color #{primary};""")
+
 with open("/home/floschy/.config/tofi/config", "r") as r:
-    lines = r.read().splitlines()
+    lines = r.read().split("\n")
     with open("/home/floschy/.config/tofi/config", "w") as w:
         w.write("")
     with open("/home/floschy/.config/tofi/config", "a") as w:
         for line in lines:
             if not line.startswith("selection-color"):
-                w.write(f"{line}")
+                w.write(f"{line}\n")
             else:
-                linebreak = line.endswith("\n")
-                w.write(f"selection-color = #{primary}{'\n' if linebreak else ''}")
+                w.write(f"selection-color = #{primary}\n")
 
 with open("/home/floschy/.config/vesktop/settings/settings.json", "r") as read:
     config = json.load(read)

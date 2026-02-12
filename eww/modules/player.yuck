@@ -1,0 +1,77 @@
+(defpoll playerstate :interval "1s"
+                     :run-while time-visible
+                    `sh ./scripts/playerupdate.sh`)
+
+
+(defwindow player
+    :monitor 1
+    :geometry (geometry :x "60%"
+                        :y "39%"
+                        :width "20%"
+                        :height "33.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module player"
+        (box :orientation "vertical"
+             :space-evenly false
+             :valign "center"
+             :halign "center"
+             :spacing 20
+            (box :class "coverimage"
+                 :width 150
+                 :height 150
+                 :hexpand false
+                 :vexpand false
+                 :valign "start"
+                 :halign "center"
+                 :style "background-image: url('${playerstate?.i}');")
+            (box :width 200
+                :space-evenly true
+                :spacing 10
+                :vexpand false
+                :halign "center"
+                (button :class "button"
+                        :onclick "playerctl previous"
+                    "")
+                (button :class "button playbtn"
+                        :onclick "playerctl play-pause"
+                    {playerstate?.s == "Playing" ? " " : ""} )
+                (button :class "button"
+                        :onclick "playerctl next"
+                    "")
+            )
+            (box :orientation "vertical"
+                (label :text {playerstate?.t}
+                       :truncate false
+                       :unindent true
+                       :wrap true
+                       :class "title")
+                (label :text {playerstate?.a}
+                       :class "artist")
+            )
+            (box :space-evenly false
+                 :hexpand false
+                 :vexpand false
+                 :width 150
+                 :orientation "vertical"
+
+                (scale :min 0
+                       :max {playerstate.l / 1000000}
+                       :value {playerstate.p / 1000000}
+                       :round-digits 1
+                       :width 200
+                       :height 40
+                       :orientation "horizontal"
+                       :vexpand false 
+                       :hexpand false
+                       ; :onchange "playerctl position {}"
+                )
+                (label :text "${playerstate?.c} /// ${playerstate?.m}"
+                       :class "duration")
+            )
+        )
+    )
+)

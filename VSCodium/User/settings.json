@@ -3,7 +3,7 @@
     "editor.fontLigatures": true,
     "svelte.enable-ts-plugin": true,
     "dart.flutterSdkPath": "/home/floschy/custominstall/flutter",
-    "workbench.colorTheme": "Coldark - Dark",
+    "workbench.colorTheme": "Material Code",
     "editor.renderWhitespace": "trailing",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.detectIndentation": false,
@@ -14,7 +14,7 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorWidth": 3,
-    "editor.minimap.autohide": true,
+    "editor.minimap.autohide": "mouseover",
     "editor.minimap.renderCharacters": false,
     "editor.minimap.side": "left",
     "editor.inlineSuggest.syntaxHighlightingEnabled": true,
@@ -24,7 +24,6 @@
     "workbench.reduceMotion": "off",
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "top",
-    "workbench.colorCustomizations": {},
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.tabActionLocation": "left",
     "workbench.editor.tabSizing": "fixed",
@@ -45,7 +44,6 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "window.customTitleBarVisibility": "auto",
-    "editor.codeActionsOnSave": {},
     "window.dialogStyle": "custom",
     "window.titleBarStyle": "custom",
     "editor.tokenColorCustomizations": {},
@@ -55,9 +53,91 @@
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
     "cSpell.userWords": [
-        "unessesary"
+        "barbg",
+        "barfg",
+        "blurhash",
+        "Brainz",
+        "Chaphasilor",
+        "configurationpage",
+        "darkred",
+        "deno",
+        "denoland",
+        "devin",
+        "downloadurl",
+        "finamp",
+        "Finamp",
+        "flac",
+        "Floschy",
+        "fullopacity",
+        "hitsong",
+        "jellyfin",
+        "Jellyfin",
+        "jetlag",
+        "mbid",
+        "mensa",
+        "nginx",
+        "refetched",
+        "rowid",
+        "tabler",
+        "tailwindcss",
+        "unessesary",
+        "webma"
     ],
     "diffEditor.ignoreTrimWhitespace": false,
     "explorer.confirmDelete": false,
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
+    "cSpell.language": "en,de-DE",
+    "clangd.path": "/home/floschy/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "github.copilot.chat.agent.runTasks": false,
+    "github.copilot.chat.agent.autoFix": false,
+    "typescript.tsserver.watchOptions": "vscode",
+    "editor.semanticHighlighting.enabled": true,
+
+    // color theme
+    "material-code.colors": {
+        // All fields are optional. Unset colors are derived from primary
+        "primary": "#91cef4",
+
+        "foreground": "#dfe3e7",
+        "mutedForeground": "#c1c7ce",
+        "background": "#0f1417",
+        // Elevated panel
+        "card": "#1c2023",
+        // Dialog, dropdown
+        "popover": "#262b2e",
+        // Hover, selected
+        "hover": "#313539",
+        // Input border, divider
+        "border": "#41484d",
+        "primaryForeground": "#00344a",
+        // Tonal button, tooltip
+        "secondary": "#374955",
+        "secondaryForeground": "#d2e5f4",
+        "error": "#c6000d",
+        "errorForeground": "#690005",
+        // Success indicators, green terminal colors
+        "success": "#a3f491",
+        // Warning indicators, yellow terminal colors
+        "warning": "#d9e014AA",
+
+        "syntax.comment": "#828f9b",
+        "syntax.string": "#b3a4db",
+        // Keywords, operators, control flow
+        "syntax.keyword": "#78b7de",
+        // Variables, tags, HTML elements
+        "syntax.variable": "#f6fafd",
+        // HTML attributes, CSS selectors
+        "syntax.attribute": "#f8f6fd",
+        // Object properties, CSS properties
+        "syntax.property": "#e8f5fd",
+        // Functions, methods, CSS values
+        "syntax.function": "#7862bc",
+        // Numbers, constants, types
+        "syntax.constant": "#a1c7de",
+        // Bracket pair colors
+        "syntax.bracket1": "#f2f3f3",
+        "syntax.bracket2": "#f2f3f3",
+        "syntax.bracket3": "#f2f3f3",
+        "syntax.bracket4": "#f2f3f3"
+    }
 }

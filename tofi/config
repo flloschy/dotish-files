@@ -7,9 +7,9 @@ padding-top = 35%
 result-spacing = 25
 num-results = 5
 font = /usr/share/fonts/nerd-fonts-git/TTF/JetBrainsMonoNerdFontMono-Medium.ttf
-background-color = #000A
-text-color = #9999
-selection-color = #463fbf
+background-color = #0f1417AA
+text-color = #004c6a
+selection-color = #dfe3e7
 text-cursor-style = underscore
 prompt-text = "> "
 hide-cursor = false
@@ -19,52 +19,3 @@ module-math = true
 module-search = true
 module-search-engine = "google.com/search"
 multi-instance = false
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

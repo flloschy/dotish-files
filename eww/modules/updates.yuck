@@ -1,0 +1,22 @@
+(defvar pendingupdates
+    "0")
+(defwindow updates
+    :monitor 1
+    :geometry (geometry :x "60%"
+                        :y "72.5%"
+                        :width "5%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module updates"
+        (button :onclick "alacritty -e yay -Syu --noconfirm --devel --rebuildtree --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter &"
+            (box :orientation "vertical"
+                (label :text "" :class "header")
+                (label :text "${pendingupdates}" :class "number")
+            )
+        )
+    )
+)

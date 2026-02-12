@@ -9,20 +9,20 @@
   <setting name="statusbar-shown" type="System.Boolean">True</setting>
   <setting name="toolbox-shown" type="System.Boolean">True</setting>
   <setting name="pixel-grid-shown" type="System.Boolean">False</setting>
-  <setting name="last-dialog-directory" type="System.String">file:///home/floschy/Projects/faHackathon/finamp-hackathon/assets</setting>
-  <setting name="last-selected-tool" type="System.String">MoveSelectionTool</setting>
-  <setting name="primary-color" type="System.String">FF0026FF</setting>
+  <setting name="last-dialog-directory" type="System.String">file:///home/floschy/Downloads</setting>
+  <setting name="last-selected-tool" type="System.String">PaintBrushTool</setting>
+  <setting name="primary-color" type="System.String">FF000000</setting>
   <setting name="secondary-color" type="System.String">FFFFFFFF</setting>
-  <setting name="recently-used-colors" type="System.String">FF0026FF,FFFF0000,FFFF6A00,FF404040,FFA0A0A0,FF303030,FF000000,FFFFFFFF,FFFFD800,FFFF6A00</setting>
+  <setting name="recently-used-colors" type="System.String">FF000000,FF808080,FFFFFFFF,FFFF6A00,FF4800FF,FFFFD800,FF3AC200,FF4CFF00,FFFF0000,FF00FFFF</setting>
   <setting name="paintbrushtool-antialias" type="System.Int32">0</setting>
-  <setting name="paintbrushtool-brush-width" type="System.Int32">4</setting>
+  <setting name="paintbrushtool-brush-width" type="System.Int32">6</setting>
   <setting name="paint-brush-brush" type="System.Int32">0</setting>
   <setting name="penciltool-alpha-blend" type="System.Int32">0</setting>
   <setting name="color-picker-sample-size" type="System.Int32">0</setting>
   <setting name="selection-combine-mode" type="System.Int32">0</setting>
-  <setting name="new-image-width" type="System.Int32">100</setting>
-  <setting name="new-image-height" type="System.Int32">200</setting>
-  <setting name="text-font" type="System.String">Arial 25</setting>
+  <setting name="new-image-width" type="System.Int32">500</setting>
+  <setting name="new-image-height" type="System.Int32">500</setting>
+  <setting name="text-font" type="System.String">Comic Sans MS Bold 20</setting>
   <setting name="text-bold" type="System.Boolean">False</setting>
   <setting name="text-italic" type="System.Boolean">False</setting>
   <setting name="text-underline" type="System.Boolean">False</setting>
@@ -31,10 +31,10 @@
   <setting name="text-outline-width" type="System.Int32">2</setting>
   <setting name="rectangletool-antialias" type="System.Int32">0</setting>
   <setting name="rectangletool-brush-width" type="System.Int32">2</setting>
-  <setting name="rectangletool-fill-style" type="System.Int32">0</setting>
+  <setting name="rectangletool-fill-style" type="System.Int32">1</setting>
   <setting name="rectangletool-shape-type" type="System.Int32">1</setting>
   <setting name="rectangletool-dash-pattern" type="System.String">-</setting>
-  <setting name="jpg-quality" type="System.Int32">96</setting>
+  <setting name="jpg-quality" type="System.Int32">70</setting>
   <setting name="default-image-type" type="System.String">jpg</setting>
   <setting name="color-scheme" type="System.Int32">0</setting>
   <setting name="tool-windows-shown" type="System.Boolean">True</setting>
@@ -43,4 +43,32 @@
   <setting name="clonestamptool-brush-width" type="System.Int32">2</setting>
   <setting name="recolortool-brush-width" type="System.Int32">2</setting>
   <setting name="menubar-shown" type="System.Boolean">False</setting>
+  <setting name="texttool-antialias" type="System.Int32">0</setting>
+  <setting name="roundedrectangletool-antialias" type="System.Int32">0</setting>
+  <setting name="roundedrectangletool-brush-width" type="System.Int32">2</setting>
+  <setting name="roundedrectangletool-fill-style" type="System.Int32">1</setting>
+  <setting name="roundedrectangletool-shape-type" type="System.Int32">3</setting>
+  <setting name="roundedrectangletool-dash-pattern" type="System.String">-</setting>
+  <setting name="roundedrectangletool-radius" type="System.Int32">20</setting>
+  <setting name="color-picker-tool-selection" type="System.Int32">0</setting>
+  <setting name="color-picker-sample-type" type="System.Int32">0</setting>
+  <setting name="paintbuckettool-fill-mode" type="System.Int32">0</setting>
+  <setting name="paintbuckettool-fill-tolerance" type="System.Int32">0</setting>
+  <setting name="erasertool-antialias" type="System.Int32">0</setting>
+  <setting name="eraser-erase-type" type="System.Int32">0</setting>
+  <setting name="ellipsetool-antialias" type="System.Int32">0</setting>
+  <setting name="ellipsetool-brush-width" type="System.Int32">2</setting>
+  <setting name="ellipsetool-fill-style" type="System.Int32">1</setting>
+  <setting name="ellipsetool-shape-type" type="System.Int32">2</setting>
+  <setting name="ellipsetool-dash-pattern" type="System.String">-</setting>
+  <setting name="linecurvetool-antialias" type="System.Int32">0</setting>
+  <setting name="linecurvetool-brush-width" type="System.Int32">2</setting>
+  <setting name="linecurvetool-fill-style" type="System.Int32">0</setting>
+  <setting name="linecurvetool-shape-type" type="System.Int32">0</setting>
+  <setting name="linecurvetool-dash-pattern" type="System.String">-</setting>
+  <setting name="linecurvetool-arrow1" type="System.Boolean">False</setting>
+  <setting name="linecurvetool-arrow2" type="System.Boolean">False</setting>
+  <setting name="linecurvetool-arrow-size" type="System.Int32">10</setting>
+  <setting name="linecurvetool-arrow-angle" type="System.Int32">15</setting>
+  <setting name="linecurvetool-arrow-length" type="System.Int32">10</setting>
 </settings>

@@ -1,4 +1,5 @@
 wayfreeze & PID=$!
+sleep 0.1
 IMG="$HOME/Pictures/Screenshots/$(date +"%Y-%m-%d_%I:%M:%S_%p").png"
 wayshot -f $IMG -s "$(slurp)"
 wl-copy < $IMG

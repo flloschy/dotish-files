@@ -1,0 +1,46 @@
+(defpoll data :interval "1s"
+              :run-while time-visible
+              :initial '{"year": "2000", "month": "00", "day": "00", "hour": "00", "minute": "00", "second": "00", "ampm": "??"}'
+            `sh /home/floschy/.config/eww/scripts/time.sh`
+)
+
+(defwidget date []
+    (box :class "date"
+         :orientation "vertical"
+         :space-evenly false
+         :valign "center"
+        (label :text {data.day})
+        (label :text {data.month} :class "compact")
+        (label :text {data.year} :class "compact")
+    )
+)
+
+(defwidget clock []
+    (box :class "clock"
+         :orientation "vertical"
+         :space-evenly false
+         :valign "center"
+        (label :text {data.hour})
+        (label :text {data.minute})
+        (label :text {data.second} :class "seconds")
+        (label :text {data.ampm})
+    )
+)
+
+
+(defwindow time
+    :monitor 1
+    :geometry (geometry :x "40%"
+                        :y "35%"
+                        :width "20%"
+                        :height "30%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module time"
+        (clock)
+        (date)
+    )
+)

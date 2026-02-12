@@ -1,6 +1,6 @@
 [general]
 import = [
-	"~/.config/globalStyle/alacritty.toml"
+	"~/.config/matugen/theme/alacritty.toml"
 ]
 live_config_reload = true
 

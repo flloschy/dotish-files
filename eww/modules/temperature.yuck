@@ -1,0 +1,22 @@
+(defpoll temp :interval "10s"
+              :run-while time-visible
+              :initial "XX"
+            `sh /home/floschy/.config/eww/scripts/temperature.sh`)
+
+(defwindow cputemp
+    :monitor 1
+    :geometry (geometry :x "40%"
+                        :y "65%"
+                        :width "5%"
+                        :height "15%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module cputemp"
+         :orientation "vertical"
+        (label :text "CPU" :class "cpu")
+        (label :text "${temp}C" :class "temp")
+    )
+)

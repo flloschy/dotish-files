@@ -1,0 +1,52 @@
+(defpoll volume :interval "1s"
+                :run-while time-visible
+            `sh ./scripts/volume.sh`)
+
+
+(defwindow volume
+    :monitor 1
+    :geometry (geometry :x "40%"
+                        :y "20%"
+                        :width "20%"
+                        :height "15%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module volume"
+         :orientation "vertical"
+        (box :space-evenly false
+             :spacing 20
+            (label :text "")
+            (scale :min 0
+                   :max 152
+                   :value {volume.vol}
+                   :round-digits 0
+                   :width 200
+                   :height 40
+                   :orientation "horizontal"
+                   :vexpand false
+                   :hexpand true
+                   :onchange "pactl set-sink-volume @DEFAULT_SINK@ {}%"
+            )
+            (label :text "${volume.vol}%")
+        )
+        (box :space-evenly false
+             :spacing 20
+            (label :text "")
+            (scale :min 0
+                   :max 152
+                   :value {volume.mic}
+                   :round-digits 0
+                   :width 200
+                   :height 40
+                   :orientation "horizontal"
+                   :vexpand false
+                   :hexpand true
+                   :onchange "pactl set-source-volume @DEFAULT_SOURCE@ {}%"
+            )
+            (label :text "${volume.mic}%")
+        )
+    )
+)

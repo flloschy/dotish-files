@@ -1,8 +1,9 @@
 # env
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=en_US.UTF-8
-
 export EDITOR='micro'
+export PATH=$PATH:/home/floschy/custominstall/flutter/bin
+
 ZSH_THEME="my"
 zstyle ':omz:update' mode reminder
 zstyle ':omz:update' frequency 30   # 30 days
@@ -40,15 +41,17 @@ alias edithypr="cd ~/.config/hypr && code . && exit"
 alias reloadzsh="source ~/.zshrc"
 alias code="codium"
 alias cls="clear"
-# alias dart="/home/floschy/custominstall/flutter/bin/dart"
-# alias flutter="/home/floschy/custominstall/flutter/bin/flutter"
 alias editzsh="nano ~/.zshrc && reloadzsh"
 alias kys='shutdown && eval $(notify-send -u critical --wait "Shutting down" "Your system will shutdown in 1 minute." -A "shutdown -c"="Cancel" -A "shutdown now"="Now" -A "shutdown -r now"="Reboot")'
 alias i='yay -S --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter --noconfirm'
-alias upgrade='yay -Syu --noconfirm --devel --rebuildtree --answerclean A --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter'
+alias upgrade='yay -Syu --noconfirm --devel --rebuildtree --answerclean N --answerdiff N --answeredit N --answerupgrade A --noremovemake --cleanafter'
 alias updates="yay -Sy; yay -Qu | wc -l"
 alias updateTheme="cd /home/floschy/.config/globalStyle && ./.venv/bin/python update.py"
 alias ls="lsd"
+alias ownIt="sudo chown -R floschy:floschy"
+alias copyparty='alacritty --working-directory /mnt/copyparty & rclone mount --vfs-cache-mode writes --dir-cache-time 5s 47ff45a93ad6-dav: /mnt/copyparty/'
+alias keepwake="~/custominstall/keep-alive_Linux_x86_64/keepalive"
+
 compressPDF() {
 	input=$1
 	output=$2

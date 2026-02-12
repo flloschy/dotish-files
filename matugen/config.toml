@@ -1,0 +1,28 @@
+[config]
+
+[templates.colors]
+input_path = './templates/colors.css'
+output_path = './theme/colors.css'
+post_hook="swaync-client -rs"
+
+[templates.alacritty]
+input_path = './templates/alacritty.toml'
+output_path = 'theme/alacritty.toml'
+post_hook="alacritty msg config ~/.config/alacritty/alacritty.toml"
+
+[templates.micro]
+input_path = './templates/micro.micro'
+output_path = 'theme/micro.micro'
+
+[templates.hyprland]
+input_path = './templates/hyprland.conf'
+output_path = 'theme/hyprland.conf'
+post_hook = 'hyprctl reload'
+
+[templates.vscode]
+input_path = './templates/vscode.json'
+output_path = '/home/floschy/.config/VSCodium/User/settings.json'
+
+[templates.tofi]
+input_path = './templates/tofi.conf'
+output_path = '../tofi/config'

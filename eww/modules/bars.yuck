@@ -1,0 +1,51 @@
+(defpoll gpu
+    :interval "5s"
+    `sh /home/floschy/.config/eww/scripts/gpu_stat.sh`)
+
+(defwidget bar [name percent cls]
+    (box :orientation "vertical"
+         :space-evenly false
+         :vexpand true
+         :spacing 30
+         :class "${cls}"
+        (box :class "bars "
+             :vexpand true
+            (scale :flipped true
+                   :class "scale"
+                   :active false
+                   :round-digits 2
+                   :value percent
+                   :min 0
+                   :max 100
+                   :orientation "vertical"
+                   :width 10
+                   :vexpand true
+            )
+        )
+        (label :text name :class "baricon" )
+    )
+)
+
+(defwindow bars
+    :monitor 1
+    :geometry (geometry :x "20%"
+                        :y "20%"
+                        :width "20%"
+                        :height "60%"
+                        :anchor "top left")
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module bars"
+        (bar :name "" :cls "bat padded" :percent {EWW_BATTERY.BAT1.status})
+        (bar :name "" :cls "cpu padded" :percent {EWW_CPU.avg})
+        (bar :name "" :cls "gpu" :percent {gpu})
+        (box :orientation "vertical"
+             :spacing 40
+             :space-evenly false
+             :vexpand true
+            (bar :name "" :cls "swp padded" :percent {EWW_RAM.user_swap_perc})
+            (bar :name "" :cls "mem" :percent {EWW_RAM.used_mem_perc})
+        )
+    )
+)

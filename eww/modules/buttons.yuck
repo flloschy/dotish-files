@@ -1,0 +1,113 @@
+(defwindow bluetooth
+    :monitor 1
+    :geometry (geometry :x "45%"
+                        :y "65%"
+                        :width "5%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module"
+        (button :class "button bluetooth"
+                :onclick "sh ./scripts/button.sh bluetooth"
+            ""
+        )
+    )
+)
+
+(defwindow wifi
+    :monitor 1
+    :geometry (geometry :x "45%"
+                        :y "72.5%"
+                        :width "5%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module"
+        (button :class "button wifi"
+                :onclick "sh ./scripts/button.sh wifi"
+            ""
+        )
+    )
+)
+(defwindow suspend
+    :monitor 1
+    :geometry (geometry :x "50%"
+                        :y "65%"
+                        :width "5%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module"
+        (button :class "button suspend"
+                :onclick "sh ./scripts/button.sh suspend"
+            ""
+        )
+    )
+)
+
+(defwindow reboot
+    :monitor 1
+    :geometry (geometry :x "50%"
+                        :y "72.5%"
+                        :width "5%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module"
+        (button :class "button reboot"
+                :onclick "sh ./scripts/button.sh reboot"
+            ""
+        )
+    )
+)
+(defwindow lock
+    :monitor 1
+    :geometry (geometry :x "55%"
+                        :y "65%"
+                        :width "5%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module"
+        (button :class "button lock"
+                :onclick "sh ./scripts/button.sh lock"
+            ""
+        )
+    )
+)
+
+(defwindow shutdown
+    :monitor 1
+    :geometry (geometry :x "55%"
+                        :y "72.5%"
+                        :width "5%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module"
+        (button :class "button shutdown"
+                :onclick "sh ./scripts/button.sh shutdown"
+            ""
+        )
+    )
+)
+
+

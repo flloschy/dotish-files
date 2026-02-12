@@ -1,0 +1,22 @@
+(defwindow tray
+    :monitor 1
+    :geometry (geometry :x "65%"
+                        :y "72.5%"
+                        :width "15%"
+                        :height "7.5%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module tray"
+        (scroll :hscroll true
+                :vscroll false
+            (systray :orientation "h"
+                     :space-evenly false 
+                     :icon-size 15
+                     :prepend-new false
+            )
+        )
+    )
+)

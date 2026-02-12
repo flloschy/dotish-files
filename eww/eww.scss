@@ -1,0 +1,234 @@
+* {
+    all: unset
+}
+
+// overlay to see if everything is placed in the center
+// .target {
+//     background-color: rgba(255, 255, 255, 0.1);
+// }
+.target {
+    background-color: rgba(21, 23, 38, 0.4);
+}
+
+// Base design & rounder corners
+.module {
+    background-color: #151726;
+    margin: 7px;
+    border-radius: 16px;
+    border-width: 2px;
+    border-color: #6b6d7c;
+    border-style: solid;
+    padding: 10px;
+    &:hover {
+        background-color: #232534;
+    }
+}
+.bars {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.ram {
+    border-top-right-radius: 20px;
+}
+.tray {
+    border-bottom-right-radius: 20px;
+}
+
+// modules
+.time {
+    font-family: "Azeret Mono", monospace;
+    letter-spacing: 10px;
+    font-size: 40px;
+    .clock {
+        .seconds {
+            opacity: 0.5;
+        }
+    }
+    .date {
+        .compact {
+            letter-spacing: 0px;
+        }
+    }
+}
+
+.cputemp {
+    font-family: "Monomaniac One", sans-serif;
+    font-size: 20px;
+    .cpu {
+        padding-top: 20px;
+    }
+    .temp {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+.button {
+    font-family: "Font Awesome 5";
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+
+
+
+.bluetooth { color: #94b8ff }
+.wifi      { color: #a78bfa }
+.suspend   { color: #f8d2c9 }
+.reboot    { color: #5ba2d0 }
+.lock      { color: #dee0ef }
+.shutdown  { color: #ee8679 }
+
+.bars {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    scale trough {
+        min-width: 50px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+    }
+    scale trough highlight {
+        border-bottom-right-radius: 13px;
+        border-bottom-left-radius: 13px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .bat {
+        color: #4f5162;
+        scale trough {
+            border-color: #4f5162;
+        }
+        scale trough highlight {
+            background-color: #4f5162;
+        }
+    }
+    .cpu {
+        color: #5ba2d0;
+        scale trough {
+            border-color: #5ba2d0;
+        }
+        scale trough highlight {
+            background-color: #5ba2d0;
+        }
+    }
+    .gpu {
+        color: #ee8679;
+        scale trough {
+            border-color: #ee8679;
+        }
+        scale trough highlight {
+            background-color: #ee8679;
+        }
+    }
+    .mem {
+        color: #f8d2c9;
+        scale trough {
+            border-color: #f8d2c9;
+        }
+        scale trough highlight {
+            background-color: #f8d2c9;
+        }
+    }
+    .swp {
+        color: #94b8ff;
+        scale trough {
+            border-color: #94b8ff;
+        }
+        scale trough highlight {
+            background-color: #94b8ff;
+        }
+    }
+    .baricon {
+        font-family: "Font Awesome 5";
+        font-size: 30px;
+    }
+    .padded .baricon {
+        padding-right: 10px;
+    }
+    .scale {
+        transition: 1s ease-in-out all;
+    }
+}
+
+.updates {
+    .header {
+        font-family: "Font Awesome 5";
+        padding-right: 10px;
+        font-size: 20px;
+    }
+}
+
+.ram {
+    .state {
+        .title {
+            &.ram {color: #f8d2c9;}
+            &.swap {color: #94b8ff;}
+            &.disk {color: #dee0ef;}
+            font-size: 30px;
+        }
+        .percent {
+            font-size: 20px;
+        }
+        .value {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+.player {
+    scale trough {
+        min-height: 10px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+    }
+    color: #dee0ef;
+    scale trough {
+        border-color: #dee0ef;
+    }
+    scale trough highlight {
+        background-color: #dee0ef;
+    }
+
+    .duration {
+        font-family: "Azeret Mono", monospace;
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+    .artist {
+        opacity: 0.8;
+        font-size: 15px;
+    }
+    .title {
+        font-size: 15px;
+    }
+
+    .playbtn {
+        padding-left: 10px;
+    }
+    .coverimage {
+        background-size: cover;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.volume {
+    scale trough {
+        min-height: 10px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+    }
+    color: #dee0ef;
+    scale trough {
+        border-color: #dee0ef;
+    }
+    scale trough highlight {
+        background-color: #dee0ef;
+    }
+}

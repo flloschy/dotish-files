@@ -1,0 +1,47 @@
+
+
+(defwidget state [title current max]
+    (box :orientation "vertical"
+         :class "state"
+         :vexpand false
+         :valign "center"
+         :spacing 10
+         :space-evenly false
+         (label :text title
+                :vexpand false
+                :class "title ${title}")
+         (label :text "${ round(current / max * 100, 1) }%"
+                :vexpand false
+                :class "percent ")
+         (label :text "${formatbytes(current, false, "si")} / ${formatbytes(max, false, "si")}"
+                :vexpand false
+                :class "value ")
+    )
+
+)
+
+(defwindow ram
+    :monitor 1
+    :geometry (geometry :x "60%"
+                        :y "20%"
+                        :width "20%"
+                        :height "19%"
+                        :anchor "top left"
+    )
+    :stacking "overlay"
+    :exclusive false
+    :namespace "ewwDashboard"
+    (box :class "module ram"
+         :orientation "horizontal"
+         :vexpand false
+        (state :title "ram"
+               :current {round(EWW_RAM.used_mem, 0)}
+               :max {round(EWW_RAM.total_mem, 0)})
+        (state :title "swap"
+               :current {EWW_RAM.total_swap - EWW_RAM.free_swap}
+               :max {EWW_RAM.total_swap})
+        (state :title "disk"
+               :current {EWW_DISK["/"].used}
+               :max {EWW_DISK["/"].total})
+    )
+)
